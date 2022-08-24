@@ -11,7 +11,7 @@ import "./PokeDex.css";
  * or from a dropdown of available pokemon. */
 function PokeDex() {
  
-  const [pokemon, setPokemon] = useAxios([]);
+  const [pokemon, setPokemon] = useAxios(null);
 
   const addPokemon = async name => {
     setPokemon(`https://pokeapi.co/api/v2/pokemon/`, name);
